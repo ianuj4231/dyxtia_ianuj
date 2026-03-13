@@ -42,3 +42,25 @@ req body to be of json type:
 
 2.  hit "GET"  `http://127.0.0.1:8080/health`
 
+////
+
+section 2:
+assumptions made for readiness:
+2.1) i used 2 variables- one score vatriable (int) and another band (string) variable...
+2.2)  if no of inflows in input array only  exceeds no of outflows..then score will increment by 1... 
+2.3) alongf with above criteria , added new rule, if net cash flow is positive, his losses are minimal, he is surely in profit side, and inflow frequency is also high...so hence...score will increase by 2 .... move him to strong category.
+2.4) if score ends up as 3, he is strong
+2.5) if score ends up as 1, he is structured.
+2.6) if score remainined 0, he will need clarification.
+
+section  3:
+assumptions for risk flags..
+3.1) if one outflow in the array makes up for more than half of total_outflow_sum..., then it will be   "Large single outflow detected"  ..
+3.2)     if no_of_inflow in the input array is   less than  no_of_outflow, then it is  "Low inflow frequency" 
+3.3) if net cash flow < 0, then ... "Negative net cash flow"
+
+
+
+section  4:
+
+4.1 ) video link..
