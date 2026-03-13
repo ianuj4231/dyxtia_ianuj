@@ -6,7 +6,10 @@ steps
 
 3. open vs code or  cursor.
 
-in terminal, paste `git clone https://github.com/ianuj4231/dyxtia_ianuj.git`
+in terminal, paste below commands in order:
+
+
+`git clone https://github.com/ianuj4231/dyxtia_ianuj.git`
 
 
 `cd dyxtia_ianuj`
