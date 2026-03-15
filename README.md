@@ -74,6 +74,12 @@ and screenshot of the output:
 
 2.  hit "GET"  `http://127.0.0.1:8080/health`
 
+
+### Health Endpoint Output
+
+![Health Check](screenshot_health.PNG)
+
+
 ////
 
 section 2:
@@ -99,7 +105,4 @@ section  4:
 
 https://www.dropbox.com/scl/fi/ok6q8sxhb7zg7n5thpdd9/c1.mp4?rlkey=flea0iqcg5f48jwsgz1jj7pd3&st=gk3sdy28&dl=0
 
-
-
-5) working screenshots:
    
