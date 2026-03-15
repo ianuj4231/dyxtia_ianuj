@@ -27,19 +27,48 @@ then in postman
 
 req body to be of json type:
 		
-
+```json
 {
-"business_name": "ABC Transport Ltd",
-"loan_amount_requested": 75000,
-"transactions": [
-{"date": "2024-01-02", "description": "Client Payment", "amount": 5200},
-{"date": "2024-01-03", "description": "Office Rent", "amount": -2000},
-{"date": "2024-01-05", "description": "Equipment Purchase", "amount": -750},
-{"date": "2024-01-07", "description": "Client Payment", "amount": 6100},
-{"date": "2024-01-10", "description": "Utilities", "amount": -400},
-{"date": "2024-01-15", "description": "NSF Fee", "amount": -45}
-]
+  "business_name": "ABC Transport Ltd",
+  "loan_amount_requested": 75000,
+  "transactions": [
+    {
+      "date": "2024-01-02",
+      "description": "Client Payment",
+      "amount": 5200
+    },
+    {
+      "date": "2024-01-03",
+      "description": "Office Rent",
+      "amount": -2000
+    },
+    {
+      "date": "2024-01-05",
+      "description": "Equipment Purchase",
+      "amount": -750
+    },
+    {
+      "date": "2024-01-07",
+      "description": "Client Payment",
+      "amount": 6100
+    },
+    {
+      "date": "2024-01-10",
+      "description": "Utilities",
+      "amount": -400
+    },
+    {
+      "date": "2024-01-15",
+      "description": "NSF Fee",
+      "amount": -45
+    }
+  ]
 }
+```
+
+and screenshot of the output:
+
+
 
 
 
@@ -68,5 +97,9 @@ section  4:
 
 4.1 ) video link..
 
-
 https://www.dropbox.com/scl/fi/ok6q8sxhb7zg7n5thpdd9/c1.mp4?rlkey=flea0iqcg5f48jwsgz1jj7pd3&st=gk3sdy28&dl=0
+
+
+
+5) working screenshots:
+   
