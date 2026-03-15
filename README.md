@@ -68,7 +68,7 @@ req body to be of json type:
 
 and screenshot of the output:
 
-
+![Postman Result](output_screenshot_1.png)
 
 
 
