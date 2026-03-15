@@ -2,9 +2,9 @@
 steps 
 1. install  docker descktop
 2. install postman
+3. open docker desktop app
 
-
-3. open vs code or  cursor.
+4 . open vs code or  cursor.
 
 in terminal, paste below commands in order:
 
@@ -21,7 +21,7 @@ in terminal, paste below commands in order:
  `docker run -p  8080:8080  imagedyxtia`  
 
 then in postman
-1. hit "POST" - `http://127.0.0.1:8080/analyze-file`
+1. hit using  "POST" method - `http://127.0.0.1:8080/analyze-file`
 	
 
 
