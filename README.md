@@ -1,43 +1,40 @@
+## Setup Instructions
 
-steps 
-1. install  docker descktop
-2. install postman
-3. open docker desktop app
+Steps
 
-4 . open vs code or  cursor.
+1. Install Docker Desktop  
+2. Install Postman  
+3. Open Docker Desktop app  
+4. Open VS Code or Cursor  
 
-in terminal, paste below commands in order:
-
+In terminal, paste the below commands in order:
 
 `git clone https://github.com/ianuj4231/dyxtia_ianuj.git`
 
-
 `cd dyxtia_ianuj`
-
 
 `docker build -t imagedyxtia .`
 
+`docker run -p 8080:8080 imagedyxtia`
 
- `docker run -p  8080:8080  imagedyxtia`  
+Attached a sample below:
 
-attached a sample below:  ## Docker Run Demonstration
+## Docker Run Demonstration
 
 ![Docker Run](docker_command_run_demonstration.png)
 
+---
 
+## API Testing Using Postman
 
+### 1. Analyze File Endpoint
 
-///////////
+Hit using **POST** method:
 
-then in postman
+`http://127.0.0.1:8080/analyze-file`
 
+Request body should be of JSON type:
 
-1. hit using  "POST" method - `http://127.0.0.1:8080/analyze-file`
-	
-
-
-req body to be of json type:
-		
 ```json
 {
   "business_name": "ABC Transport Ltd",
@@ -77,43 +74,59 @@ req body to be of json type:
 }
 ```
 
-and screenshot of the output:
+Screenshot of the output:
 
 ![Postman Result](output_screenshot_1.png)
 
+---
 
+### 2. Health Endpoint
 
-2.  hit "GET"  `http://127.0.0.1:8080/health`
+Hit using **GET**
 
+`http://127.0.0.1:8080/health`
 
 ### Health Endpoint Output
 
 ![Health Check](screenshot_health.PNG)
 
+---
 
-////
+## Section 2: Assumptions Made for Readiness
 
-section 2:
-assumptions made for readiness:
-2.1) i used 2 variables- one score vatriable (int) and another band (string) variable...
-2.2)  if no of inflows in input array only  exceeds no of outflows..then score will increment by 1... 
-2.3) alongf with above criteria , added new rule, if net cash flow is positive, his losses are minimal, he is surely in profit side, and inflow frequency is also high...so hence...score will increase by 2 .... move him to strong category.
-2.4) if score ends up as 3, he is strong
-2.5) if score ends up as 1, he is structured.
-2.6) if score remainined 0, he will need clarification.
+2.1 I used two variables:  
+- `score` (integer)  
+- `band` (string)
 
-section  3:
-assumptions for risk flags..
-3.1) if one outflow in the array makes up for more than half of total_outflow_sum..., then it will be   "Large single outflow detected"  ..
-3.2)     if no_of_inflow in the input array is   less than  no_of_outflow, then it is  "Low inflow frequency" 
-3.3) if net cash flow < 0, then ... "Negative net cash flow"
+2.2 If the number of inflows in the input array exceeds the number of outflows, the score increments by **1**.
 
+2.3 Along with the above rule, I added another rule:  
+If **net cash flow is positive**, it indicates losses are minimal, the business is profitable, and inflow frequency is strong.  
+So the **score increases by 2**, moving the business to the **strong category**.
 
+2.4 If score ends up as **3 → Strong**
 
-section  4:
+2.5 If score ends up as **1 → Structured**
 
-4.1 ) video link..
+2.6 If score remains **0 → Needs clarification**
+
+---
+
+## Section 3: Assumptions for Risk Flags
+
+3.1 If one outflow transaction in the array makes up **more than half of the total outflow sum**, then flag:  
+`Large single outflow detected`
+
+3.2 If the number of inflows is **less than the number of outflows**, then flag:  
+`Low inflow frequency`
+
+3.3 If **net cash flow < 0**, then flag:  
+`Negative net cash flow`
+
+---
+
+## Section 4: Demonstration Video
+
+Video link:
 
 https://www.dropbox.com/scl/fi/ok6q8sxhb7zg7n5thpdd9/c1.mp4?rlkey=flea0iqcg5f48jwsgz1jj7pd3&st=gk3sdy28&dl=0
-
-   
