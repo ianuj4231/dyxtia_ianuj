@@ -67,3 +67,6 @@ assumptions for risk flags..
 section  4:
 
 4.1 ) video link..
+
+
+https://www.dropbox.com/scl/fi/ok6q8sxhb7zg7n5thpdd9/c1.mp4?rlkey=flea0iqcg5f48jwsgz1jj7pd3&st=gk3sdy28&dl=0
