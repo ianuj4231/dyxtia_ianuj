@@ -20,7 +20,18 @@ in terminal, paste below commands in order:
 
  `docker run -p  8080:8080  imagedyxtia`  
 
+attached a sample below:  ## Docker Run Demonstration
+
+![Docker Run](docker_command_run_demonstration.png)
+
+
+
+
+///////////
+
 then in postman
+
+
 1. hit using  "POST" method - `http://127.0.0.1:8080/analyze-file`
 	
 
